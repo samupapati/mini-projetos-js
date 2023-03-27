@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@0;1&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Finlandica';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    background: linear-gradient(317deg, #c9c9c9, #969696);
+    background-size: 400% 400%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+.container-input{
+    width: 100%;
+    height: 20%;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 2%;
+    background-color: #F8F8F8;
+    border: 1px solid black;
+}
+
+.botoes{
+    border: none;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.botoes:hover{
+    filter:brightness(90%);
+}
+
+.numeros{
+    font-weight: normal;
+}
+
+#somar{
+    background-color: #969696;
+    color: white;
+    font-weight: bold;
+}
+
+#subtrair{
+    background-color: #4e4e4e;
+    color: white;
+}
+
+#mult{
+    background-color: #969696;
+    color: white;
+}
+
+#dividir{
+    background-color: #4e4e4e;
+    color: white;
+}
+
+#resultado{
+    background-color: black;
+    color: white;
+}
+
+#apaga, #ponto{
+    background-color: #F8F8F8;
+}
+
+.container-botoes{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#zero{
+    grid-column: 1 / span 3;
+}
+
+#resultado{
+    grid-column: 3 / 5;
+}

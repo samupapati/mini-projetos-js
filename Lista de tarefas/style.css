@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kantumruy+Pro:wght@200;300;500&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kantumruy Pro';
+}
+
+body{
+    background-color: #707070;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #707070;
+    padding-top: 5%;
+}
+
+#input-div{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputNomeTarefa{
+    width: 50%;
+    height: 25px;
+    border: none;
+    border-radius: 0px;
+    color: #dddddd;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 2px solid #91dbc2;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: .3s;
+}
+
+#inputNomeTarefa:focus{
+    height: 40px;
+    background-color: #555555;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: .3s;
+}
+
+#inputNomeTarefa::placeholder{
+    color: #dddddd;
+}
+
+#buttonAddTarefa{
+    font-size: 250%;
+    margin-left: 1%;
+    color: #91dbc2;
+    cursor: pointer;
+}
+
+#buttonAddTarefa:hover{
+    transform: scale(115%);
+    transition: .3s;
+}
+
+#tarefas-container{
+    width: 40%;
+}
+
+.tarefaDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 2%;
+    background-color: #555555;
+    margin-top: 5%;
+    box-shadow: 5px 5px 10px 0px #00000077;
+    border-radius: 5px;
+}
+
+.tarefaDiv span{
+    color: #dddddd;
+    overflow-x: auto;
+    width: 85%;
+}
+
+.tarefaDiv span::-webkit-scrollbar{
+    height: 4px;
+}
+
+.tarefaDiv span::-webkit-scrollbar-thumb{
+    background-color: #91dbc2;
+}
+
+.tarefaDiv span::-webkit-scrollbar-track{
+    background-color: #d0f3e7;
+    border-radius: 5px;
+}
+
+.btnTarefa{
+    font-size: 125%;
+    color: #91dbc2;
+    cursor: pointer;
+}
+
+.btnTarefa:hover{
+    transform: scale(115%);
+    transition: .3s;
+}
+
+.mostrarJanela{
+    display: none !important;
+}
+
+#janelaEditarTarefa{
+    width: 50%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #707070;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 5px 5px 10px 5px #00000086;
+}
+
+#janelaEditarTarefa p{
+    font-size: 20px;
+    color: #91dbc2;
+}
+
+#janelaEditarTarefa .form{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#janelaEditarTarefa input{
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 0px;
+    padding-left: 2%;
+    color: #91dbc2;
+    background-color: #555555;
+    outline: none;
+    box-shadow: 3px 3px 7px 0px #00000077;
+    border-radius: 5px;
+}
+
+#janelaEditarTarefa input::placeholder{
+    color: #91dbc2;
+}
+
+#buttonAddTarefaEditar{
+    font-size: 250%;
+    color: #91dbc2;
+    cursor: pointer;
+    margin-top: 2.5%;
+}
+
+#buttonAddTarefaEditar:hover{
+    transform: scale(115%);
+    transition: .3s;
+}   
+
+#fecharJanela{
+    width: 30px;
+    height: 25px;
+    margin-top: 5%;
+    background-color:#db9191;
+    color: #555555;
+    border-radius: 5px;
+    border: 2px solid #db9191;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right: 2%;
+}
+
+#fecharJanela:hover{
+    background-color: transparent;
+    color: #db9191;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: .3s;
+}   
+
+@media all and (max-width: 800px){
+    #inputNomeTarefa{
+        width: 80%;
+    }
+    #tarefas-container{
+        width: 80%;
+    }
+    #janelaEditarTarefa{
+        width: 85%;
+        height: 30%;
+    }
+}

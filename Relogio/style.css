@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Finlandica';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2c2c;
+}
+
+.container{
+    display: flex;
+}
+
+h1{
+    font-size: 1000%;
+}
+
+#hora{
+    color: gold;
+}
+
+.sep1{
+    color: #ffe656;
+}
+
+#minutos{
+    color: #ffec7e;
+}
+
+.sep2{
+    color: #fff098;
+}
+
+#segundos{
+    color: #fff3ae;
+}
